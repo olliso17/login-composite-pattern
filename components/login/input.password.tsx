@@ -1,29 +1,24 @@
-import { ReactNode } from "react";
-import { passwordInputState } from "../states";
-import { useRecoilState } from "recoil";
-import { inputStyle } from "../../util/styles_var";
+import { passwordInputState, passwordState } from "../states";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { Input } from "../input";
 
 export type LoginInputPasswordProps = {
-  label: string;
   className: string;
 };
 
-export const InputPassword = ({
-  label,
-  className,
-}: LoginInputPasswordProps) => {
+export const InputPassword = () => {
   const [password, setPassword] = useRecoilState(passwordInputState);
+  const passwoState = useRecoilValue(passwordState);
+
   return (
-    <div className="flex flex-col">
-      <label className="text-xs" htmlFor="">
-        {label}
-      </label>
-      <input
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        type="password"
-        className={className}
-      />
-    </div>
+    <Input
+      value={password}
+      type="password"
+      label="Password:"
+      onChange={(e) => {
+        setPassword(e.target.value);
+      }}
+      className={passwoState}
+    />
   );
 };

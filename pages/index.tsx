@@ -1,11 +1,7 @@
-import { useRecoilValue } from "recoil";
-import { charState, passwordState } from "../components/states";
-import { fullScreenFlex, titleLG, titleSm } from "../util/styles_var";
+import { fullScreenFlex } from "../util/styles_var";
 import { Login } from "../components/login";
 
 export default function Home() {
-  const charName = useRecoilValue(charState);
-  const passwoState = useRecoilValue(passwordState);
   return (
     <div className={fullScreenFlex}>
       <Login.root
@@ -16,13 +12,9 @@ export default function Home() {
               container={
                 <>
                   <Login.titleSm title="Faça seu Cadastro abaixo" />
-                  <Login.inputName label="Name:" />
+                  <Login.inputName />
                   {/* <Login.input type="email" label="Email:" /> */}
-                  <Login.inputPassword
-                    label="Password:"
-                    className={passwoState}
-                  />
-                  <div>{charName}</div>
+                  <Login.inputPassword />
                 </>
               }
             />
