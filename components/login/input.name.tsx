@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useRecoilState } from "recoil";
-import { nameInputState } from "../../components/states";
+import { nameInputState } from "../states";
 import { inputStyle } from "../../util/styles_var";
 
 export type LoginInputNameProps = {
