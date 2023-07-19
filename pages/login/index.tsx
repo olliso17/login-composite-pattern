@@ -1,5 +1,6 @@
 import { Button } from "./button";
-import { Input } from "./input";
+import { InputName } from "./input.name";
+import { InputPassword } from "./input.password";
 import { Container } from "./login.container";
 import { Root } from "./root";
 import { TitleLg } from "./title-lg";
@@ -10,7 +11,8 @@ export const Login = {
   container: Container,
   titleLg: TitleLg,
   titleSm: TitleSm,
-  input: Input,
+  inputName: InputName,
+  inputPassword: InputPassword,
   button:Button
 };
 
