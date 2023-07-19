@@ -1,14 +1,14 @@
-import { passwordInputState, passwordState } from "../states";
-import { useRecoilState, useRecoilValue } from "recoil";
 import { Input } from "../input";
+import { useLogin } from "../states";
 
 export type LoginInputPasswordProps = {
   className: string;
 };
 
 export const InputPassword = () => {
-  const [password, setPassword] = useRecoilState(passwordInputState);
-  const passwoState = useRecoilValue(passwordState);
+  const {password, setPassword, styleInput}= useLogin()
+
+
 
   return (
     <Input
@@ -18,7 +18,7 @@ export const InputPassword = () => {
       onChange={(e) => {
         setPassword(e.target.value);
       }}
-      className={passwoState}
+      className={styleInput}
     />
   );
 };

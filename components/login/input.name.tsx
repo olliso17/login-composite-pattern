@@ -1,12 +1,13 @@
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilValue } from "recoil";
 import { Input } from "../input";
 import { inputStyle } from "../../util/styles_var";
-import { charState, nameInputState } from "../states";
+import { useLogin } from "../states";
 
 export const InputName = () => {
 
-  const [name, setName] = useRecoilState(nameInputState);
-  const charName = useRecoilValue(charState);
+  // const [name, setName] = useRecoilState(nameInputState);
+  const {name, setName}= useLogin();
+  // const charName = useRecoilValue(charState);
 
   return (
     <>
@@ -17,7 +18,7 @@ export const InputName = () => {
         onChange={(e) => setName(e.target.value)}
         className={inputStyle}
       />
-      <div>{charName}</div>
+      <div>{name}</div>
     </>
   );
 };

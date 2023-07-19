@@ -1,12 +1,15 @@
-import { RecoilRoot } from "recoil";
 import "./styles/globals.css";
 import type { AppProps } from "next/app";
+import { LoginProvider } from "../components/states";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <RecoilRoot>
+   // <RecoilRoot>
+   <LoginProvider>
       <Component {...pageProps} />
-    </RecoilRoot>
+   </LoginProvider>
+      
+    //</RecoilRoot>
   );
 }
 
