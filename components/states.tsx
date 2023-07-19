@@ -78,22 +78,27 @@ export function LoginProvider({ children }: Props) {
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
   const [email, setEmail] = useState('')
-  const [styleInput, setStyleInput] = useState(inputStyle)
+  var styleInput= ''
 
-  // function verify(password: string) {
-  //   if (password.length > 8) {
-  //     return setStyleInput(inputStyleSucess)
-  //   }
-  //   if (password.length > 0 && password.length < 8) {
-  //     console.log('n foi')
-  //     return setStyleInput(inputStyleDanger)
-  //   }
+  function verify(password: string) {
+    if(password.length == 0){
+      styleInput = inputStyle
+      return styleInput
+    }
+    if (password.length > 8) {
+      styleInput=inputStyleSucess
+      return styleInput
+    }
+    if (password.length > 0 && password.length < 8) {
+      styleInput = inputStyleDanger
+      return styleInput
+    }
 
-  // }
+  }
   // useEffect(()=>{
   //   setStyleInput(inputStyle)
   // }, [])
-  // verify(password)
+  verify(password)
 
   const value = {
     name, setName,
