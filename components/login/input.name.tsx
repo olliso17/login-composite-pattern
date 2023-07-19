@@ -1,9 +1,10 @@
 import { useRecoilState, useRecoilValue } from "recoil";
-import { charState, nameInputState } from "../states";
 import { Input } from "../input";
 import { inputStyle } from "../../util/styles_var";
+import { charState, nameInputState } from "../states";
 
 export const InputName = () => {
+
   const [name, setName] = useRecoilState(nameInputState);
   const charName = useRecoilValue(charState);
 
