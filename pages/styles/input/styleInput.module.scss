@@ -1,0 +1,36 @@
+$displayDivInput: flex;
+$flexdirectionDivInput: column;
+$marginDivInput: 0.5vw;
+
+$borderstyleInput: solid;
+$borderwidthInput: 0.2vw;
+$bordercolorInput: rgb(187 247 208);
+$bordercolorInputHover: rgb(56, 177, 98);
+$borderradiusInput: 0.5vw;
+$outlineInput: none;
+$textAlignInput: center;
+
+$fontSizeLabelInput: 0.6vw;
+
+.divInput {
+  display: $displayDivInput;
+  flex-direction: $flexdirectionDivInput;
+  margin: $marginDivInput;
+  &__input {
+    border-style: $borderstyleInput;
+    border-width: $borderwidthInput;
+    border-color: $bordercolorInput;
+    border-radius: $borderradiusInput;
+    text-align: $textAlignInput;
+    &:hover {
+      border-color: $bordercolorInputHover;
+    }
+    &:focus {
+      border-color: $bordercolorInputHover;
+      outline: $outlineInput;
+    }
+  }
+  &__label {
+    font-size: $fontSizeLabelInput;
+  }
+}

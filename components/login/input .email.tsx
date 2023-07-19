@@ -1,19 +1,18 @@
-import { useRecoilValue } from "recoil";
 import { Input } from "../input";
 import { useLogin } from "../states";
 
-export const InputName = () => {
+export const InputEmail = () => {
   // const [name, setName] = useRecoilState(nameInputState);
-  const { name, setName } = useLogin();
+  const { email, setEmail } = useLogin();
   // const charName = useRecoilValue(charState);
 
   return (
     <>
       <Input
-        value={name}
-        type="text"
-        label="Name:"
-        onChange={(e) => setName(e.target.value)}
+        value={email}
+        type="email"
+        label="Email:"
+        onChange={(e) => setEmail(e.target.value)}
         // className={inputStyle}
       />
     </>

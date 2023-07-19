@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import styleLoginContainer from "../../pages/styles/login/styleLoginContainer.module.scss";
 
 export type LoginContainerProps = {
   container: ReactNode;
@@ -6,7 +7,9 @@ export type LoginContainerProps = {
 
 export const Container = ({ container }: LoginContainerProps) => {
   return (
-    <div className="flex flex-col justify-center items-center w-[30vw] h-[60vh] bg-text-base m-1 rounded-md">
+    <div
+      className={styleLoginContainer.container}
+    >
       {container}
     </div>
   );

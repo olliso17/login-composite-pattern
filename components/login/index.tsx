@@ -1,4 +1,5 @@
 import { Button } from "./button";
+import { InputEmail } from "./input .email";
 import { InputName } from "./input.name";
 import { InputPassword } from "./input.password";
 import { Container } from "./login.container";
@@ -12,8 +13,9 @@ export const Login = {
   titleLg: TitleLg,
   titleSm: TitleSm,
   inputName: InputName,
+  inputEmail: InputEmail,
   inputPassword: InputPassword,
-  button:Button
+  button: Button,
 };
 
 //create types login, login danger, sucess ... and button ...

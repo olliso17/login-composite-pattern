@@ -1,12 +1,11 @@
 import { ChangeEvent } from "react";
-import { inputStyle } from "../../util/styles_var";
-
+import styleInput from "pages/styles/input/styleInput.module.scss";
 export type InputProps = {
   type: string;
   label: string;
   value: string | number | readonly string[] | undefined;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  className: string;
+  // className: string;
 };
 
 export const Input = ({
@@ -14,18 +13,18 @@ export const Input = ({
   type,
   value,
   onChange,
-  className,
-}: InputProps) => {
+}: // className,
+InputProps) => {
   return (
-    <div className="flex flex-col ">
-      <label className="text-xs" htmlFor="">
+    <div className={styleInput.divInput}>
+      <label className={styleInput.divInput__label} htmlFor="">
         {label}
       </label>
       <input
         type={type}
         value={value}
         onChange={onChange}
-        className={className}
+        className={styleInput.divInput__input}
       />
     </div>
   );

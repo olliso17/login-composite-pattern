@@ -1,9 +1,17 @@
-import { fullScreenFlex } from "../util/styles_var";
 import { Login } from "../components/login";
 
 export default function Home() {
   return (
-    <div className={fullScreenFlex}>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Login.root
         children={
           <>
@@ -13,7 +21,7 @@ export default function Home() {
                 <>
                   <Login.titleSm title="Faça seu Cadastro abaixo" />
                   <Login.inputName />
-                  {/* <Login.input type="email" label="Email:" /> */}
+                  <Login.inputEmail />
                   <Login.inputPassword />
                 </>
               }

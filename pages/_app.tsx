@@ -1,14 +1,14 @@
-import "./styles/globals.css";
+import "./styles/globals.scss";
 import type { AppProps } from "next/app";
 import { LoginProvider } from "../components/states";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-   // <RecoilRoot>
-   <LoginProvider>
+    // <RecoilRoot>
+    <LoginProvider>
       <Component {...pageProps} />
-   </LoginProvider>
-      
+    </LoginProvider>
+
     //</RecoilRoot>
   );
 }

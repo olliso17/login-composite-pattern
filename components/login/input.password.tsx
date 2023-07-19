@@ -6,9 +6,7 @@ export type LoginInputPasswordProps = {
 };
 
 export const InputPassword = () => {
-  const {password, setPassword, styleInput}= useLogin()
-
-
+  const { password, setPassword, styleInput } = useLogin();
 
   return (
     <Input
@@ -18,7 +16,7 @@ export const InputPassword = () => {
       onChange={(e) => {
         setPassword(e.target.value);
       }}
-      className={styleInput}
+      // className={styleInput}
     />
   );
 };

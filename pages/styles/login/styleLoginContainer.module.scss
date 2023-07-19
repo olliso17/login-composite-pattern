@@ -1,0 +1,19 @@
+$backgroundColorLoginContainer: white;
+$widthLoginContainer: 35vw;
+$heightLoginContainer: 50vh;
+$borderRadiusLoginContainer: 2vw;
+$displayLoginContainer: flex;
+$flexDirectionLoginContainer: column;
+$justifyContentLoginContainer: center;
+$alignItemsLoginContainer: center;
+
+.container {
+  background-color: $backgroundColorLoginContainer;
+  width: $widthLoginContainer;
+  height: $heightLoginContainer;
+  border-radius: $borderRadiusLoginContainer;
+  display: $displayLoginContainer;
+  flex-direction: $flexDirectionLoginContainer;
+  justify-content: $justifyContentLoginContainer;
+  align-items: $alignItemsLoginContainer;
+}
