@@ -1,11 +1,4 @@
-$backgroundColorLoginContainer: white;
-$widthLoginContainer: 35vw;
-$heightLoginContainer: 50vh;
-$borderRadiusLoginContainer: 2vw;
-$displayLoginContainer: flex;
-$flexDirectionLoginContainer: column;
-$justifyContentLoginContainer: center;
-$alignItemsLoginContainer: center;
+@import  'pages/styles/_variables.scss';
 
 .container {
   background-color: $backgroundColorLoginContainer;

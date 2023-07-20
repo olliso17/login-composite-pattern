@@ -1,0 +1,11 @@
+@import  'pages/styles/_variables.scss';
+
+
+.divPage{
+    width: $widthPage;
+    height: $heightPage;
+    display: $displayPage;
+    flex-direction: $flexDirectionPage;
+    justify-content: $justifyContentPage;
+    align-items: $alignItemsPage;
+}

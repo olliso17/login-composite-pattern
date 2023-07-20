@@ -1,11 +1,4 @@
-$backgroundColorLoginRoot: rgb(187 247 208);
-$widthLoginRoot: 40vw;
-$heightLoginRoot: 80vh;
-$borderRadiusLoginRoot: 2vw;
-$displayLoginRoot: flex;
-$flexDirectionLoginRoot: column;
-$justifyContentLoginRoot: center;
-$alignItemsLoginRoot: center;
+@import  'pages/styles/_variables.scss';
 
 .root {
   background-color: $backgroundColorLoginRoot;

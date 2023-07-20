@@ -1,16 +1,4 @@
-$displayDivInput: flex;
-$flexdirectionDivInput: column;
-$marginDivInput: 0.5vw;
-
-$borderstyleInput: solid;
-$borderwidthInput: 0.2vw;
-$bordercolorInput: rgb(187 247 208);
-$bordercolorInputHover: rgb(56, 177, 98);
-$borderradiusInput: 0.5vw;
-$outlineInput: none;
-$textAlignInput: center;
-
-$fontSizeLabelInput: 0.6vw;
+@import  'pages/styles/_variables.scss';
 
 .divInput {
   display: $displayDivInput;

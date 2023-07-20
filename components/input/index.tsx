@@ -1,31 +1,12 @@
-import { ChangeEvent } from "react";
-import styleInput from "pages/styles/input/styleInput.module.scss";
-export type InputProps = {
-  type: string;
-  label: string;
-  value: string | number | readonly string[] | undefined;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  // className: string;
-};
+import { InputRoot } from "./input";
+import { InputEmail } from "./input .email";
+import { InputName } from "./input.name";
+import { InputPassword } from "./input.password";
 
-export const Input = ({
-  label,
-  type,
-  value,
-  onChange,
-}: // className,
-InputProps) => {
-  return (
-    <div className={styleInput.divInput}>
-      <label className={styleInput.divInput__label} htmlFor="">
-        {label}
-      </label>
-      <input
-        type={type}
-        value={value}
-        onChange={onChange}
-        className={styleInput.divInput__input}
-      />
-    </div>
-  );
-};
+export const Input = {
+  rooy:InputRoot,
+  name: InputName,
+  email: InputEmail,
+  password: InputPassword
+
+}

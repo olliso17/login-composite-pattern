@@ -1,20 +1,18 @@
+import { Container } from "../container";
+import { Input } from "../input";
 import { Button } from "./button";
-import { InputEmail } from "./input .email";
-import { InputName } from "./input.name";
-import { InputPassword } from "./input.password";
-import { Container } from "./login.container";
-import { Root } from "./root";
 import { TitleLg } from "./title-lg";
 import { TitleSm } from "./title.sm";
 
 export const Login = {
-  root: Root,
+  page:Container,
+  root: Container,
   container: Container,
   titleLg: TitleLg,
   titleSm: TitleSm,
-  inputName: InputName,
-  inputEmail: InputEmail,
-  inputPassword: InputPassword,
+  inputName: Input.name,
+  inputEmail: Input.email,
+  inputPassword: Input.password,
   button: Button,
 };
 

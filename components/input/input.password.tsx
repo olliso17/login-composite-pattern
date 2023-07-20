@@ -1,15 +1,23 @@
 import { Input } from "../input";
 import { useLogin } from "../states";
+import { InputRoot } from "./input";
 
 export type LoginInputPasswordProps = {
-  className: string;
+  classNameDiv: string;
+  classNameLabel: string;
+  classNameInput: string;
 };
 
-export const InputPassword = () => {
+export const InputPassword = ({  classNameDiv,
+  classNameLabel,
+  classNameInput,}:LoginInputPasswordProps) => {
   const { password, setPassword, styleInput } = useLogin();
 
   return (
-    <Input
+    <InputRoot
+    classNameDiv={classNameDiv}
+    classNameInput={classNameInput}
+    classNameLabel={classNameLabel}
       value={password}
       type="password"
       label="Password:"

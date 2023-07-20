@@ -1,0 +1,42 @@
+$colorClean: rgb(187 247 208);
+$colorStrong: rgb(56, 177, 98);
+
+
+
+$backgroundColorLoginContainer: white;
+$widthLoginContainer: 35vw;
+$heightLoginContainer: 50vh;
+$borderRadiusLoginContainer: 2vw;
+$displayLoginContainer: flex;
+$flexDirectionLoginContainer: column;
+$justifyContentLoginContainer: center;
+$alignItemsLoginContainer: center;
+
+
+$displayDivInput: flex;
+$flexdirectionDivInput: column;
+$marginDivInput: 0.5vw;
+$borderstyleInput: solid;
+$borderwidthInput: 0.2vw;
+$bordercolorInput: $colorClean;
+$bordercolorInputHover:$colorStrong;
+$borderradiusInput: 0.5vw;
+$outlineInput: none;
+$textAlignInput: center;
+$fontSizeLabelInput: 0.6vw;
+
+$widthPage: 100vw;
+$heightPage: 100vh;
+$displayPage: flex;
+$flexDirectionPage: column;
+$justifyContentPage: center;
+$alignItemsPage: center;
+
+$backgroundColorLoginRoot:$colorClean;
+$widthLoginRoot: 40vw;
+$heightLoginRoot: 80vh;
+$borderRadiusLoginRoot: 2vw;
+$displayLoginRoot: flex;
+$flexDirectionLoginRoot: column;
+$justifyContentLoginRoot: center;
+$alignItemsLoginRoot: center;
