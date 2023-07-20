@@ -12,24 +12,16 @@ export default function Home() {
         alignItems: "center",
       }}
     >
-      <Login.root
-        children={
-          <>
-            <Login.titleLg title="Aprendendo Composite Login" />
-            <Login.container
-              container={
-                <>
-                  <Login.titleSm title="Faça seu Cadastro abaixo" />
-                  <Login.inputName />
-                  <Login.inputEmail />
-                  <Login.inputPassword />
-                </>
-              }
-            />
-            <Login.button />
-          </>
-        }
-      />
+      <Login.root>
+        <Login.titleLg title="Aprendendo Composite Login" />
+        <Login.container>
+          <Login.titleSm title="Faça seu Cadastro abaixo" />
+          <Login.inputName />
+          <Login.inputEmail />
+          <Login.inputPassword />
+        </Login.container>
+        <Login.button />
+      </Login.root>
     </div>
   );
 }

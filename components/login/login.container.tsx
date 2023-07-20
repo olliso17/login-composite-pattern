@@ -2,15 +2,15 @@ import { ReactNode } from "react";
 import styleLoginContainer from "../../pages/styles/login/styleLoginContainer.module.scss";
 
 export type LoginContainerProps = {
-  container: ReactNode;
+  children: ReactNode;
 };
 
-export const Container = ({ container }: LoginContainerProps) => {
+export const Container = ({ children }: LoginContainerProps) => {
   return (
     <div
       className={styleLoginContainer.container}
     >
-      {container}
+      {children}
     </div>
   );
 };
